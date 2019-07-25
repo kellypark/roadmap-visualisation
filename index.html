@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Roadmap</title>
+
+  <script type="text/javascript" src="./lib/vis-network.min.js"></script>
+  <script src="index.js"></script>
+  <link href="./lib/vis-network.min.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+    #roadmap-chart {
+      width: 700px;
+      height: 700px;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="roadmap-chart"></div>
+
+  <div id="information"></div>
+
+  <script type="text/javascript">
+    var container = document.getElementById('roadmap-chart');
+    var data = {
+      nodes: nodes,
+      edges: edges
+    };
+
+    var network = new vis.Network(container, data, options);
+
+  </script>
+
+
+</body>
+
+</html>
